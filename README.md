@@ -1,3 +1,6 @@
+#### AI disclosure:
+Some of the code was helped changed with ChatGPT, all code was reviewed and all comments, analysis, and interpretations were done on my own
+
 ## Purpose of the Analysis
 The purpose of this project is to reproduce the analytical workflow from Lecture 01 R code into Python. 
 The workflow includes loading the COMPAS dataset, cleaning and processing the data, performing exploratory data analysis (EDA), fitting a logistic regression model, and evaluating the model using confusion matrices and fairness-related error metrics across racial groups.
