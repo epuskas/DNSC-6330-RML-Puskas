@@ -1,4 +1,4 @@
-##### Assignment 1 README
+# Assignment 1 README
 
 #### AI disclosure:
 Some of the code was helped changed with ChatGPT, all code was reviewed and all comments, analysis, and interpretations were done on my own
@@ -29,7 +29,7 @@ I used the followig python libraries for this project:
    - confusion matrix evaluation
    - fairness analysis by race
 
-##### Assignment 2 README
+# Assignment 2 README
 
 #### AI disclosure:
 Some of the code was assisted by ChatGPT, but all code was reviewed and all comments, analysis, and interpretations were completed independently.
