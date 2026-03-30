@@ -1,3 +1,5 @@
+### Assignment 1 README
+
 #### AI disclosure:
 Some of the code was helped changed with ChatGPT, all code was reviewed and all comments, analysis, and interpretations were done on my own
 
@@ -26,3 +28,43 @@ I used the followig python libraries for this project:
    - logistic regression modeling
    - confusion matrix evaluation
    - fairness analysis by race
+
+### Assignment 2 README
+
+#### AI disclosure:
+Some of the code was assisted by ChatGPT, but all code was reviewed and all comments, analysis, and interpretations were completed independently.
+
+## Purpose of the Analysis
+The purpose of this project is to build and analyze a COMPAS replacement model using Python.  
+The workflow includes preprocessing the data, fitting machine learning models, and evaluating model performance using fairness-related metrics across racial groups.
+
+A key focus of this analysis is to understand how the model makes predictions and whether there are differences in outcomes across groups. To do this, the project uses interpretability methods such as LIME, SHAP, and DiCE to explain predictions at both the global and individual level. This is important for evaluating fairness in high-stakes settings like the criminal justice system.
+
+## Python Libraries Used
+I used the following Python libraries for this project:
+- pandas  
+- numpy  
+- matplotlib  
+- scikit-learn  
+- lime  
+- shap  
+- dice-ml  
+
+## Instructions for Reproducing Results
+
+1. Open the Jupyter Notebook file in Google Colab, Jupyter Notebook, or another compatible environment.
+
+2. Install required libraries if needed. Some may need !pip installments which just require removing the # in the code before the line.
+   
+3. Run all cells from top to bottom in order.
+
+4. The notebook will reproduce the full workflow, including:
+- data preprocessing and feature engineering  
+- model training (logistic regression and gradient boosting)  
+- evaluation using confusion matrices and fairness metrics (FPR, FNR, AUC)  
+- LIME explanations for individual predictions  
+- SHAP summary and waterfall plots  
+- DiCE counterfactual analysis  
+
+5. Review the outputs and written interpretations within the notebook for final results and conclusions.
+6. Write a governance memo by addressing a hypothetical court auditor summarizing the results of the models, limitations, and additional monitoring recommendations.
