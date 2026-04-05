@@ -68,3 +68,40 @@ I used the following Python libraries for this project:
 
 5. Review the outputs and written interpretations within the notebook for final results and conclusions.
 6. Write a governance memo by addressing a hypothetical court auditor summarizing the results of the models, limitations, and additional monitoring recommendations.
+
+# Assignment 3 README
+
+## AI Disclosure
+AI in the form of ChatGPT was used to help debug errors that were occuring when writing code from lecture slides to my own script. All analysis, interpretations, etc. are done entirely on my own.
+
+## Purpose of the Analysis
+The purpose of thie project is to view disparte impact for COMPAS risk assessment model. The analysis focuses on identifying if the model produces unfair or unequal outcomes across protected groups, focusing on race and sex.
+
+
+## Python Libraries Used
+I used the following Python libraries for this project:
+- pandas
+- numpy
+- matplotlib
+- statsmodels
+- sklearn
+- solas-ai
+
+## Instructions for Reproducing Results
+1. Open the Jupyter Notebook file in Google Colab, Jupyter Notebook, or another compatible environment.
+
+2. Install required libraries if needed. Some may need !pip installments which just require removing the # in the code before the line.
+
+3. Run all cells from top to bottom in order.
+
+4. The notebook will reproduce the full analysis, including:
+- data cleaning and preprocessing
+- creation of binary outcome (high risk)
+- computation of AIR, ME, and SMD
+- error-rate disparity analysis (FPR/FNR)
+- statistical testing using two-proportion z-tests
+- intersectional subgroup analysis (race × sex)
+- fairness visualizations (bar charts)
+
+5. Review the outputs and written interpretations within the notebook for final results and conclusions.
+6. Write a compliance memo addressed to a hypothetical regulator summarizing findings, metrics used, and limitations.
