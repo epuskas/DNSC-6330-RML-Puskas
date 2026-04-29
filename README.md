@@ -105,3 +105,28 @@ I used the following Python libraries for this project:
 
 5. Review the outputs and written interpretations within the notebook for final results and conclusions.
 6. Write a compliance memo addressed to a hypothetical regulator summarizing findings, metrics used, and limitations.
+
+# Assignment 4 README
+## Purpose of the Analysis
+The purpose of this project is to stress test the COMPAS prediction models built in previous lectures and evaluate whether they hold up beyond just performing well on a test set. The analysis covers five areas: distribution drift, generalization and overfitting, spurious correlations, robustness under stress, and slice-based fairness evaluation. A key focus is moving from just reporting metrics to actually reasoning about what they mean — specifically whether the models are reliable enough to be deployed responsibly in a high-stakes criminal justice setting.
+
+## Python Libraries Used
+I used the following Python libraries for this project:
+- pandas
+- numpy
+- matplotlib
+- scipy
+- scikit-learn
+
+## Instructions for Reproducing Results
+1. Open the Jupyter Notebook file in Google Colab, Jupyter Notebook, or another compatible environment.
+2. Run all cells from top to bottom in order.
+3. The notebook reads the COMPAS dataset directly from the ProPublica GitHub URL, so no separate download is needed.
+4. The notebook will reproduce the full audit workflow, including:
+Part A: PSI and KS tests for numeric feature drift, MMD in encoded feature space, and train vs. test score distribution comparison
+Part B: Train vs. test AUC, accuracy, and log loss with overfitting diagnosis using performance gaps
+Part C: Counterfactual swap sensitivity for race, gender, and crime type
+Part D: Stress testing priors_count with delta scenarios, ICE curves, and global sensitivity index
+Part E: Slice-based evaluation by race, gender, and age with FPR, FNR, and AUC per group
+
+5. Review the written interpretations after each section for analysis and conclusions.
