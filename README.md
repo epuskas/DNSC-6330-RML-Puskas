@@ -130,3 +130,30 @@ Part D: Stress testing priors_count with delta scenarios, ICE curves, and global
 Part E: Slice-based evaluation by race, gender, and age with FPR, FNR, and AUC per group
 
 5. Review the written interpretations after each section for analysis and conclusions.
+
+# Assignment 5 README
+## Purpose of the Analysis
+The purpose of this project is to evaluate the COMPAS risk assessment model under adversarial conditions using three attack frameworks: PGD evasion, label-flip data poisoning, and membership inference. The analysis investigates how each attack affects both model performance and fairness outcomes across racial groups, and whether standard monitoring tools are sufficient to detect them. A key focus is understanding the gap between accuracy-based monitoring and fairness-based monitoring in high-stakes criminal justice settings.
+
+## Files
+RML_Assignment_5_PUSKAS.ipynb — the full analysis notebook containing all code, outputs, and plots
+DNSC 6330 Individual Homework 5 (1).pdf — the written report corresponding to the notebook above, containing interpretations and analysis for all four questions
+
+## Python Libraries Used
+I used the following Python libraries for this project:
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+
+## Instructions for Reproducing Results
+1. Open RML_Assignment_5_PUSKAS.ipynb in Google Colab, Jupyter Notebook, or another compatible environment.
+2. Run all cells from top to bottom in order.
+3. The notebook reads the COMPAS dataset directly from the ProPublica GitHub URL, so no separate download is needed.
+4. The notebook will reproduce the full analysis, including:
+- PGD evasion attack across epsilon values for both LR and GBT models
+- Label-flip poisoning loop with AUC and AIR degradation curves for AA-targeted and CA-targeted variants
+- PSI-based drift monitoring evaluation
+- Shadow model membership inference attack with confidence gap histograms
+- L2 regularization sweep and MI AUC analysis
+5. Review the written interpretations in DNSC 6330 Individual Homework 5 (1).pdf for the full report and conclusions.
